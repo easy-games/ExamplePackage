@@ -1,29 +1,29 @@
 {
-	"compilerOptions": {
-		// required
-		"allowSyntheticDefaultImports": true,
-		"downlevelIteration": true,
-		"jsx": "react",
-		"jsxFactory": "Roact.createElement",
-		"jsxFragmentFactory": "Roact.Fragment",
-		"module": "commonjs",
-		"moduleResolution": "Node",
-		"noLib": true,
-		"resolveJsonModule": true,
-		"experimentalDecorators": true,
-		"forceConsistentCasingInFileNames": true,
-		"moduleDetection": "force",
-		"strict": true,
-		"target": "ESNext",
-		"typeRoots": [
+    "compilerOptions": {
+        // required
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "jsx": "react",
+        "jsxFactory": "Roact.createElement",
+        "jsxFragmentFactory": "Roact.Fragment",
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "noLib": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleDetection": "force",
+        "strict": true,
+        "target": "ESNext",
+        "typeRoots": [
             "node_modules/@rbxts", 
             "node_modules/@easy-games", 
             "../../../Types~/"
         ],
 
-		// configurable
-		// "rootDirs": ["src/Server", "src/Client", "src/Shared"],
-		"outDir": "../",
+        // configurable
+        // "rootDirs": ["src/Server", "src/Client", "src/Shared"],
+        "outDir": "../",
         "paths": {
             "@*": [
                 "../../../../Types~/@*"
@@ -32,28 +32,28 @@
             "Server/*": ["./Server/*"],
             "Shared/*": ["./Shared/*"]
         },
-		"baseUrl": "src",
+        "baseUrl": "src",
         "skipLibCheck": true,
-		"plugins": [
+        "plugins": [
             // { "transform": "@easy-games/unity-component-transformer" },
-			{ 
-				"transform": "@easy-games/unity-flamework-transformer",
-				"$corepackmode$": true,
-				"hashPrefix": "$"
-			},
-		],
-	},
+            { 
+                "transform": "@easy-games/unity-flamework-transformer",
+                "$corepackmode$": true,
+                "hashPrefix": "$"
+            },
+        ],
+    },
     "include": [
-        // "../../Types~/**/*.d.ts",
+        "../../../Types~/**/*.d.ts",
         "src/**/*"
     ],
     "exclude": [
         "node_modules",
         "**/*.spec.ts"
     ],
-	"rbxts": {
+    "rbxts": {
         "rojo": "./default.project.json",
-		"includePath": "../Bundles/Shared/Resources/include",
+        "includePath": "../Bundles/Shared/Resources/include",
         "type": "airshipbundle"
-	},
+    },
 }
