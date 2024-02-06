@@ -35,11 +35,8 @@
         "baseUrl": "src",
         "skipLibCheck": true,
         "plugins": [
-            // { "transform": "@easy-games/unity-component-transformer" },
             { 
-                "transform": "@easy-games/unity-flamework-transformer",
-                "$corepackmode$": true,
-                "hashPrefix": "$"
+                "transform": "@easy-games/unity-flamework-transformer"
             },
         ],
     },
