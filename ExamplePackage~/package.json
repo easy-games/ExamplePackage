@@ -10,7 +10,7 @@
       "watch:dev": "utsc-dev build --project . --verbose --watch --writeOnlyChanged",
       "types": "utsc prepareTypes && tspc --build tsconfig.types.json && utsc postTypes",
       "types:dev": "utsc-dev prepareTypes && tspc --build tsconfig.types.json && utsc-dev postTypes",
-      "update:compiler": "npm i -D @easy-games/unity-ts@latest @easy-games/unity-flamework-transformer@latest @easy-games/unity-component-transformer@latest"
+      "update-airship": "npm i -D @easy-games/unity-ts@staging @easy-games/unity-flamework-transformer@staging && npm i @easy-games/unity-object-utils@latest @easy-games/unity-inspect@latest @easy-games/compiler-types@staging"
     },
     "keywords": [],
     "author": "",
@@ -18,7 +18,6 @@
     "devDependencies": {
       "@easy-games/compiler-types": "^3.0.0-17",
       "@easy-games/types": "^1.0.81-161",
-      "@easy-games/unity-component-transformer": "^1.0.0-11",
       "@easy-games/unity-flamework-transformer": "^1.1.0-33",
       "@easy-games/unity-rojo-resolver": "^1.0.3-7",
       "@easy-games/unity-ts": "^3.0.0-106",
@@ -34,7 +33,6 @@
       "typescript-transform-paths": "^3.4.6"
     },
     "dependencies": {
-      "@easy-games/flamework-core": "^3.0.0-68",
       "@easy-games/unity-inspect": "^1.0.1-2",
       "@easy-games/unity-object-utils": "^1.0.4-3"
     }
