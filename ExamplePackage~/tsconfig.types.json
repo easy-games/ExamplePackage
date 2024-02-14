@@ -20,7 +20,7 @@
             "@*": [
                 "../../../../Types~/@*"
             ],
-            "@robbie/NetworkSync/*": ["./*"],
+            "@ExampleOrg/ExamplePackage/*": ["./*"],
             "Client/*": ["./Client/*"],
             "Server/*": ["./Server/*"],
             "Shared/*": ["./Shared/*"]
